@@ -1,43 +1,28 @@
-#include <fcntl.h>
-#include <unistd.h>
+#include <algorithm>
+#include <fstream>
 #include <iostream>
 #include <vector>
 #include "metrics.hpp"
 
 extern void printResult(const std::string&, double, size_t);
 
-void runBufferedBenchmark(const std::string& path) {
-    constexpr size_t BUFFER_SIZE = 4096;
-
-    int fd = open(path.c_str(), O_RDONLY);
-    if (fd < 0) {
-        perror("open");
+void runBufferedBenchmark(const std::string& path,
+                          std::size_t blockSize,
+                          std::size_t maxBytes) {
+    std::ifstream file(path, std::ios::binary);
+    if (!file) {
+        std::cerr << "Failed to open file for buffered IO: " << path << "\n";
         return;
     }
 
-    std::vector<char> buffer(BUFFER_SIZE);
-
-    size_t total = 0;
+    std::vector<char> buffer(blockSize);
+    std::size_t total = 0;
 
     Timer timer;
-
-    while (true) {
-        ssize_t bytes = read(fd, buffer.data(), BUFFER_SIZE);
-
-        if (bytes < 0) {
-            perror("read");
-            break;
-        }
-
-        if (bytes == 0)
-            break;
-
-        total += bytes;
+    while (total < maxBytes && (file.read(buffer.data(), static_cast<std::streamsize>(std::min(blockSize, maxBytes - total))) || file.gcount() > 0)) {
+        total += static_cast<std::size_t>(file.gcount());
     }
-
     timer.stop();
-
-    close(fd);
 
     printResult("Buffered IO", timer.elapsedSeconds(), total);
 }

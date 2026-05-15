@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/workspaces/Linux-Page-Cache-Benchmark-Tool/include
 
-CXX_FLAGS = -std=gnu++17
+CXX_FLAGS = -std=c++23 -Wall -Wextra -Wpedantic
 

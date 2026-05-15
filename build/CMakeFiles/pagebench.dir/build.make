@@ -97,10 +97,24 @@ CMakeFiles/pagebench.dir/src/benchmark.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pagebench.dir/src/benchmark.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Linux-Page-Cache-Benchmark-Tool/src/benchmark.cpp -o CMakeFiles/pagebench.dir/src/benchmark.cpp.s
 
+CMakeFiles/pagebench.dir/src/metrics.cpp.o: CMakeFiles/pagebench.dir/flags.make
+CMakeFiles/pagebench.dir/src/metrics.cpp.o: /workspaces/Linux-Page-Cache-Benchmark-Tool/src/metrics.cpp
+CMakeFiles/pagebench.dir/src/metrics.cpp.o: CMakeFiles/pagebench.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Linux-Page-Cache-Benchmark-Tool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pagebench.dir/src/metrics.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pagebench.dir/src/metrics.cpp.o -MF CMakeFiles/pagebench.dir/src/metrics.cpp.o.d -o CMakeFiles/pagebench.dir/src/metrics.cpp.o -c /workspaces/Linux-Page-Cache-Benchmark-Tool/src/metrics.cpp
+
+CMakeFiles/pagebench.dir/src/metrics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pagebench.dir/src/metrics.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/Linux-Page-Cache-Benchmark-Tool/src/metrics.cpp > CMakeFiles/pagebench.dir/src/metrics.cpp.i
+
+CMakeFiles/pagebench.dir/src/metrics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pagebench.dir/src/metrics.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Linux-Page-Cache-Benchmark-Tool/src/metrics.cpp -o CMakeFiles/pagebench.dir/src/metrics.cpp.s
+
 CMakeFiles/pagebench.dir/src/buffered_io.cpp.o: CMakeFiles/pagebench.dir/flags.make
 CMakeFiles/pagebench.dir/src/buffered_io.cpp.o: /workspaces/Linux-Page-Cache-Benchmark-Tool/src/buffered_io.cpp
 CMakeFiles/pagebench.dir/src/buffered_io.cpp.o: CMakeFiles/pagebench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Linux-Page-Cache-Benchmark-Tool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pagebench.dir/src/buffered_io.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Linux-Page-Cache-Benchmark-Tool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pagebench.dir/src/buffered_io.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pagebench.dir/src/buffered_io.cpp.o -MF CMakeFiles/pagebench.dir/src/buffered_io.cpp.o.d -o CMakeFiles/pagebench.dir/src/buffered_io.cpp.o -c /workspaces/Linux-Page-Cache-Benchmark-Tool/src/buffered_io.cpp
 
 CMakeFiles/pagebench.dir/src/buffered_io.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/pagebench.dir/src/buffered_io.cpp.s: cmake_force
 CMakeFiles/pagebench.dir/src/direct_io.cpp.o: CMakeFiles/pagebench.dir/flags.make
 CMakeFiles/pagebench.dir/src/direct_io.cpp.o: /workspaces/Linux-Page-Cache-Benchmark-Tool/src/direct_io.cpp
 CMakeFiles/pagebench.dir/src/direct_io.cpp.o: CMakeFiles/pagebench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Linux-Page-Cache-Benchmark-Tool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pagebench.dir/src/direct_io.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Linux-Page-Cache-Benchmark-Tool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pagebench.dir/src/direct_io.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pagebench.dir/src/direct_io.cpp.o -MF CMakeFiles/pagebench.dir/src/direct_io.cpp.o.d -o CMakeFiles/pagebench.dir/src/direct_io.cpp.o -c /workspaces/Linux-Page-Cache-Benchmark-Tool/src/direct_io.cpp
 
 CMakeFiles/pagebench.dir/src/direct_io.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/pagebench.dir/src/direct_io.cpp.s: cmake_force
 CMakeFiles/pagebench.dir/src/mmap_io.cpp.o: CMakeFiles/pagebench.dir/flags.make
 CMakeFiles/pagebench.dir/src/mmap_io.cpp.o: /workspaces/Linux-Page-Cache-Benchmark-Tool/src/mmap_io.cpp
 CMakeFiles/pagebench.dir/src/mmap_io.cpp.o: CMakeFiles/pagebench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Linux-Page-Cache-Benchmark-Tool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pagebench.dir/src/mmap_io.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Linux-Page-Cache-Benchmark-Tool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pagebench.dir/src/mmap_io.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pagebench.dir/src/mmap_io.cpp.o -MF CMakeFiles/pagebench.dir/src/mmap_io.cpp.o.d -o CMakeFiles/pagebench.dir/src/mmap_io.cpp.o -c /workspaces/Linux-Page-Cache-Benchmark-Tool/src/mmap_io.cpp
 
 CMakeFiles/pagebench.dir/src/mmap_io.cpp.i: cmake_force
@@ -139,38 +153,24 @@ CMakeFiles/pagebench.dir/src/mmap_io.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pagebench.dir/src/mmap_io.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Linux-Page-Cache-Benchmark-Tool/src/mmap_io.cpp -o CMakeFiles/pagebench.dir/src/mmap_io.cpp.s
 
-CMakeFiles/pagebench.dir/src/metrics.cpp.o: CMakeFiles/pagebench.dir/flags.make
-CMakeFiles/pagebench.dir/src/metrics.cpp.o: /workspaces/Linux-Page-Cache-Benchmark-Tool/src/metrics.cpp
-CMakeFiles/pagebench.dir/src/metrics.cpp.o: CMakeFiles/pagebench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Linux-Page-Cache-Benchmark-Tool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pagebench.dir/src/metrics.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pagebench.dir/src/metrics.cpp.o -MF CMakeFiles/pagebench.dir/src/metrics.cpp.o.d -o CMakeFiles/pagebench.dir/src/metrics.cpp.o -c /workspaces/Linux-Page-Cache-Benchmark-Tool/src/metrics.cpp
-
-CMakeFiles/pagebench.dir/src/metrics.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pagebench.dir/src/metrics.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/Linux-Page-Cache-Benchmark-Tool/src/metrics.cpp > CMakeFiles/pagebench.dir/src/metrics.cpp.i
-
-CMakeFiles/pagebench.dir/src/metrics.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pagebench.dir/src/metrics.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Linux-Page-Cache-Benchmark-Tool/src/metrics.cpp -o CMakeFiles/pagebench.dir/src/metrics.cpp.s
-
 # Object files for target pagebench
 pagebench_OBJECTS = \
 "CMakeFiles/pagebench.dir/src/main.cpp.o" \
 "CMakeFiles/pagebench.dir/src/benchmark.cpp.o" \
+"CMakeFiles/pagebench.dir/src/metrics.cpp.o" \
 "CMakeFiles/pagebench.dir/src/buffered_io.cpp.o" \
 "CMakeFiles/pagebench.dir/src/direct_io.cpp.o" \
-"CMakeFiles/pagebench.dir/src/mmap_io.cpp.o" \
-"CMakeFiles/pagebench.dir/src/metrics.cpp.o"
+"CMakeFiles/pagebench.dir/src/mmap_io.cpp.o"
 
 # External object files for target pagebench
 pagebench_EXTERNAL_OBJECTS =
 
 pagebench: CMakeFiles/pagebench.dir/src/main.cpp.o
 pagebench: CMakeFiles/pagebench.dir/src/benchmark.cpp.o
+pagebench: CMakeFiles/pagebench.dir/src/metrics.cpp.o
 pagebench: CMakeFiles/pagebench.dir/src/buffered_io.cpp.o
 pagebench: CMakeFiles/pagebench.dir/src/direct_io.cpp.o
 pagebench: CMakeFiles/pagebench.dir/src/mmap_io.cpp.o
-pagebench: CMakeFiles/pagebench.dir/src/metrics.cpp.o
 pagebench: CMakeFiles/pagebench.dir/build.make
 pagebench: CMakeFiles/pagebench.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspaces/Linux-Page-Cache-Benchmark-Tool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable pagebench"

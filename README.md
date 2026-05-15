@@ -15,9 +15,11 @@ A Linux page-cache benchmark tool written in C++.
 ```bash
 mkdir build
 cd build
-cmake ..
+cmake -DPAGEBENCH_USE_CXX23=ON ..
 make
 ```
+
+On non-Unix hosts, the buffered benchmark still builds and runs, while `direct` and `mmap` remain Linux/Unix-only benchmarks.
 
 ## Create Test File
 
@@ -40,6 +42,24 @@ Direct IO:
 mmap:
 ```bash
 ./pagebench mmap ../test.bin
+```
+
+## New CLI options
+
+```bash
+./pagebench --mode buffered --file ../test.bin --block-size 8192 --bytes 100M
+```
+
+Supported options:
+- `--mode <buffered|direct|mmap>`
+- `--file <path>`
+- `--block-size <bytes>` (supports K, M, G suffixes)
+- `--bytes <bytes>` (supports K, M, G suffixes)
+- `-h`, `--help`
+
+Legacy usage also works:
+```bash
+./pagebench buffered ../test.bin
 ```
 
 ## Example Benchmark Results
