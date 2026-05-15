@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/pagebench.dir/src/main.cpp.o CMakeFiles/pagebench.dir/src/benchmark.cpp.o CMakeFiles/pagebench.dir/src/buffered_io.cpp.o CMakeFiles/pagebench.dir/src/direct_io.cpp.o CMakeFiles/pagebench.dir/src/mmap_io.cpp.o CMakeFiles/pagebench.dir/src/metrics.cpp.o -o pagebench 
