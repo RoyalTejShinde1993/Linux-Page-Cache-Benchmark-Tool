@@ -71,6 +71,42 @@ Throughput: 2145.91 MB/s
 
 ---
 
+# Distributed Storage Architecture
+
+This architecture shows a clustered storage system with a coordinator and replicated storage nodes.
+
+```
+                 +----------------+
+                 |    Client      |
+                 +--------+-------+
+                          |
+                    HTTP/TCP API
+                          |
+                +---------+----------+
+                |      Coordinator   |
+                +---------+----------+
+                          |
+          +---------------+----------------+
+          |                                |
+     Replicate                        Replicate
+          |                                |
++---------+--------+             +---------+--------+
+|   Storage Node   |             |   Storage Node   |
++------------------+             +------------------+
+| local disk       |             | local disk       |
+| metadata index   |             | metadata index   |
+| WAL              |             | WAL              |
++------------------+             +------------------+
+```
+
+Key components:
+
+- **Client**: issues benchmark or storage requests over HTTP/TCP.
+- **Coordinator**: routes requests, manages metadata, and coordinates replication.
+- **Storage Nodes**: persist data locally, maintain metadata indexes, and use a write-ahead log (WAL) for durability.
+- **Replication**: ensures data resilience and availability across nodes.
+
+This final architecture represents a more production-ready distributed storage design compared to a single-node benchmark runner.
 # What This Project Actually Does
 
 Your benchmark tool studies how the Linux kernel handles file IO through the **page cache**.
@@ -598,6 +634,31 @@ Inspired by:
 This becomes extremely impressive.
 
 ---
+
+# High-Level Architecture
+
+```
++----------------------+                     
+| Benchmark Runner     |                     
++----------+-----------+                     
+		   |                                 
+		   +--> buffered IO test            
+		   +--> mmap test                   
+		   +--> O_DIRECT test               
+		   +--> random access test          
+		   +--> sequential test             
+		   |                                 
+		   v                                 
++----------------------+                     
+| Metrics Collector    |                     
++----------------------+                     
+		   |                                 
+		   +--> latency                      
+		   +--> throughput                   
+		   +--> page faults                  
+		   +--> cache hit ratio              
+		   +--> CPU usage                    
+```
 
 
 
